@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8445e5e3d7fe4a408bd79f034153a4d8" Name="Diagram1">
+        <EntityTypeShape EntityType="materiel_villageModel.acheter" Width="1.5" PointX="5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="materiel_villageModel.Catalogue_Produits" Width="1.5" PointX="0.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="materiel_villageModel.Clients" Width="1.5" PointX="9.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="materiel_villageModel.Commande" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="materiel_villageModel.Entreprise" Width="1.5" PointX="7.375" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="materiel_villageModel.Fournisseur" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="materiel_villageModel.FK_acheter_num_fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="materiel_villageModel.FK_acheter_num_fournisseur_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="materiel_villageModel.FK_acheter_num_produit" ManuallyRouted="false" />
+        <AssociationConnector Association="materiel_villageModel.FK_Entreprise_num_produit" ManuallyRouted="false" />
+        <AssociationConnector Association="materiel_villageModel.FK_Entreprise_num_facture" ManuallyRouted="false" />
+        <AssociationConnector Association="materiel_villageModel.reserver" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

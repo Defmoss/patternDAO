@@ -40,6 +40,8 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listClient
@@ -53,28 +55,28 @@
             // 
             // txtVille
             // 
-            this.txtVille.Location = new System.Drawing.Point(378, 76);
+            this.txtVille.Location = new System.Drawing.Point(68, 128);
             this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(100, 20);
+            this.txtVille.Size = new System.Drawing.Size(164, 20);
             this.txtVille.TabIndex = 3;
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(378, 50);
+            this.txtPrenom.Location = new System.Drawing.Point(68, 85);
             this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(100, 20);
+            this.txtPrenom.Size = new System.Drawing.Size(164, 20);
             this.txtPrenom.TabIndex = 4;
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(378, 24);
+            this.txtNom.Location = new System.Drawing.Point(68, 44);
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(100, 20);
+            this.txtNom.Size = new System.Drawing.Size(164, 20);
             this.txtNom.TabIndex = 5;
             // 
             // btnSuppr
             // 
-            this.btnSuppr.Location = new System.Drawing.Point(240, 82);
+            this.btnSuppr.Location = new System.Drawing.Point(213, 82);
             this.btnSuppr.Name = "btnSuppr";
             this.btnSuppr.Size = new System.Drawing.Size(75, 23);
             this.btnSuppr.TabIndex = 6;
@@ -84,7 +86,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(240, 24);
+            this.btnAjouter.Location = new System.Drawing.Point(213, 22);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 7;
@@ -95,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(343, 27);
+            this.label1.Location = new System.Drawing.Point(19, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 8;
@@ -104,7 +106,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(329, 53);
+            this.label2.Location = new System.Drawing.Point(19, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 9;
@@ -113,7 +115,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(346, 79);
+            this.label3.Location = new System.Drawing.Point(19, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 10;
@@ -121,7 +123,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(240, 53);
+            this.btnModifier.Location = new System.Drawing.Point(213, 53);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
             this.btnModifier.TabIndex = 11;
@@ -132,7 +134,7 @@
             // btnValider
             // 
             this.btnValider.Enabled = false;
-            this.btnValider.Location = new System.Drawing.Point(349, 191);
+            this.btnValider.Location = new System.Drawing.Point(7, 287);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(75, 23);
             this.btnValider.TabIndex = 12;
@@ -142,7 +144,7 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(430, 191);
+            this.btnAnnuler.Location = new System.Drawing.Point(157, 287);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 13;
@@ -150,28 +152,41 @@
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnAnnuler);
+            this.groupBox1.Controls.Add(this.txtVille);
+            this.groupBox1.Controls.Add(this.btnValider);
+            this.groupBox1.Controls.Add(this.txtPrenom);
+            this.groupBox1.Controls.Add(this.txtNom);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Enabled = false;
+            this.groupBox1.Location = new System.Drawing.Point(296, 21);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(238, 316);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Details";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 389);
-            this.Controls.Add(this.btnAnnuler);
-            this.Controls.Add(this.btnValider);
+            this.ClientSize = new System.Drawing.Size(545, 389);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnModifier);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnSuppr);
-            this.Controls.Add(this.txtNom);
-            this.Controls.Add(this.txtPrenom);
-            this.Controls.Add(this.txtVille);
             this.Controls.Add(this.listClient);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -189,6 +204,7 @@
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

@@ -29,7 +29,7 @@ namespace PaternDAO
             listClient.DisplayMember = "Affichage";
             listClient.ValueMember = "Id";
             listClient.DataSource = connexion.List();
-
+            Width = 313;
         }
 
         private void listClient_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +52,8 @@ namespace PaternDAO
             txtVille.Text = cli.Ville;
             btnValider.Enabled = true;
             btnAnnuler.Enabled = true;
+            groupBox1.Enabled = true;
+            Width = 561;
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
@@ -62,6 +64,8 @@ namespace PaternDAO
             btnChoix = "ajouter";
             btnValider.Enabled = true;
             btnAnnuler.Enabled = true;
+            groupBox1.Enabled = true;
+            Width = 561;
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
@@ -74,7 +78,8 @@ namespace PaternDAO
             txtVille.Text = cli.Ville;
             btnValider.Enabled = true;
             btnAnnuler.Enabled = true;
-
+            groupBox1.Enabled = true;
+            Width = 561;
         }
 
         private void btnValider_Click(object sender, EventArgs e)
@@ -114,6 +119,9 @@ namespace PaternDAO
             txtVille.Clear();
             btnValider.Enabled = false;
 
+            groupBox1.Enabled = false;
+            Width = 313;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,6 +136,13 @@ namespace PaternDAO
             txtVille.Clear();
             btnValider.Enabled = false;
             btnAnnuler.Enabled = false;
+            groupBox1.Enabled = false;
+            Width = 313;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
